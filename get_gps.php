@@ -24,7 +24,7 @@ if ($numberOfRows > 0) {
     while ($rowr = mysqli_fetch_row($values)) {
         $csv_output .= "[";
         for ($j=0;$j<$numberOfRows;$j++) {
-            $csv_output .= $rowr[$j].", ";
+            $csv_output .= $rowr[$j].",";
         }
     $csv_output = substr($csv_output, 0, (strlen($csv_output) - 2));
     $csv_output .= "], ";
